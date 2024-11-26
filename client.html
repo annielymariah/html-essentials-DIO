@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Server</title>
+</head>
+
+<body>
+    <h1>Arquitetura Cliente-Servidor</h1>
+    <h4>Outros conteúdos</h4>
+    <ul>
+        <li><a href="index.html">HTML Básico</a></li>
+        <li><a href="computerHistory.html">História da Computação</a></li>
+    </ul>
+    <p>Neste blog você aprenderá como funciona a arquitetura cliente-servidor.</p>
+    <hr />
+    <h3 id="indice">Índice</h3>
+    <ul>
+        <li><a href="#cliente-servidor">O que é um Cliente</a></li>
+        <li><a href="#o-que-e-cliente">O que é um Cliente</a></li>
+        <li><a href="#funcoes-caracteristicas-cliente">Funções e Características do Cliente</a></li>
+        <li><a href="#tipos-de-clientes">Tipos de Clientes</a></li>
+        <li><a href="#comunicacao-cliente-servidor">Características de Comunicação Cliente-Servidor</a></li>
+        <li><a href="#exemplos-clientes">Exemplos de Como um Cliente Funciona</a></li>
+        <li><a href="#preocupacoes-do-lado-cliente">Preocupações do Lado do Cliente</a></li>
+        <li><a href="#o-que-e-server">O que é o Server</a></li>
+        <li><a href="#tipos-de-servidores">Tipos de Servidores</a></li>
+        <li><a href="#data-centers">Data Centers</a></li>
+        <li><a href="#construcao-do-server">Construção do Server (Hardware e Software)</a></li>
+        <li><a href="#exemplos-servidores-web">Exemplos de Servidores Web</a></li>
+    </ul>
+    <hr />
+    <h2 id="cliente-servidor">O que é arquitetura cliente-servidor?</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>A arquitetura cliente-servidor é um modelo de comunicação em rede onde um dispositivo (o cliente) solicita
+        serviços ou recursos a outro dispositivo (o servidor), que os processa e responde ao cliente. Nesse modelo, o
+        cliente é responsável por enviar requisições e o servidor é responsável por processá-las e fornecer a resposta.
+        O servidor geralmente armazena dados ou executa operações que o cliente não pode realizar localmente.</p>
+    <hr />
+    <h2 id="o-que-e-cliente">O que é um Cliente</h2>
+    <p>No contexto da arquitetura <strong>Cliente-Servidor</strong>, o <strong>cliente</strong> é um
+        dispositivo, software ou aplicação que solicita serviços ou recursos de um servidor. Ele atua como a
+        interface do usuário ou ponto de acesso que permite que os usuários finais interajam com o sistema. O
+        cliente pode ser um computador, smartphone, tablet ou qualquer outro dispositivo capaz de se comunicar
+        com um servidor.</p>
+
+    <hr>
+
+    <h2 id="funcoes-caracteristicas-cliente">Funções e Características do Cliente</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><strong>Solicitação de Serviços:</strong> O cliente é responsável por fazer as requisições que o
+            servidor deve processar, como acessar uma página web ou realizar um login.</li>
+        <li><strong>Interface com o Usuário:</strong> O cliente oferece a interface gráfica ou de interação com
+            o usuário, como navegadores ou aplicativos móveis.</li>
+        <li><strong>Processamento Local:</strong> O cliente pode realizar alguns processamentos locais, como
+            validação de entrada de dados ou renderização de interfaces gráficas.</li>
+        <li><strong>Armazenamento Local:</strong> O cliente pode armazenar dados temporários como cookies ou
+            cache.</li>
+        <li><strong>Comunicação com o Servidor:</strong> O cliente estabelece a comunicação com o servidor
+            através de protocolos como HTTP ou FTP.</li>
+        <li><strong>Consumidor de Recursos:</strong> O cliente consome os serviços ou dados fornecidos pelo
+            servidor, como streaming de vídeo ou áudio.</li>
+        <li><strong>Exemplo de Clientes:</strong> Navegadores Web (Chrome, Firefox), Aplicativos Móveis
+            (Instagram, WhatsApp), Software de e-mail (Outlook, Thunderbird), Softwares de FTP (FileZilla,
+            WinSCP).</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="tipos-de-clientes">Tipos de Clientes</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><strong>Cliente Pesado (Fat Client):</strong> Possui grande parte do processamento e armazenamento
+            local. Exemplos: Photoshop, Microsoft Word.</li>
+        <li><strong>Cliente Leve (Thin Client):</strong> Depende quase completamente do servidor para
+            processamento. Exemplos: Terminais de acesso, aplicativos web acessados via navegador.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="comunicacao-cliente-servidor">Características de Comunicação Cliente-Servidor</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><strong>Requisição e Resposta:</strong> O cliente envia uma requisição ao servidor, que responde com
+            os dados solicitados.</li>
+        <li><strong>Interatividade:</strong> A comunicação é muitas vezes interativa, permitindo que o cliente
+            envie dados para o servidor e receba feedback em tempo real.</li>
+        <li><strong>Protocolos de Comunicação:</strong> O cliente e o servidor se comunicam através de
+            protocolos como HTTP, HTTPS, FTP ou WebSocket.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="exemplos-clientes">Exemplos de Como um Cliente Funciona</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><strong>Navegador Web:</strong> Quando você acessa um site, o navegador envia uma requisição HTTP
+            para o servidor, que responde com os dados da página.</li>
+        <li><strong>Aplicativos de e-mail:</strong> O cliente de e-mail envia uma solicitação ao servidor de
+            e-mail para buscar ou enviar mensagens.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="preocupacoes-do-lado-cliente">Preocupações do Lado do Cliente</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li>Tipos de resoluções de tela dos dispositivos (Responsividade).</li>
+        <li>Navegadores utilizados (Compatibilidade, boas práticas e testes).</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="o-que-e-server">O que é o Server</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Um <strong>server</strong> (servidor) é um computador, sistema ou programa que fornece serviços, dados ou
+        recursos a outros dispositivos, chamados <strong>clientes</strong>, por meio de uma rede, como a
+        internet ou uma rede local.</p>
+
+    <hr>
+
+    <h2 id="tipos-de-servidores">Tipos de Servidores</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li>Data base Server (Arquivos): Armazena e gerencia arquivos compartilhados na rede.</li>
+        <li>Segurança (Firewall).</li>
+        <li>Streaming.</li>
+        <li>Servidor de Correio (E-mail): Gerencia o envio e recebimento de mensagens de e-mail.</li>
+        <li>Web Server: Responde a solicitações de navegadores e entrega páginas HTML, imagens e outros
+            recursos.</li>
+        <li>Servidor Proxy: Intermediário entre o cliente e o servidor de destino.</li>
+        <li>Servidor DNS: Traduz nomes de domínio em endereços IP.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="data-centers">Data Centers</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p><strong>Data centers</strong> são instalações físicas projetadas para abrigar servidores, sistemas de
+        armazenamento, equipamentos de rede e outros componentes necessários para processar, armazenar e
+        distribuir dados em larga escala.</p>
+
+    <hr>
+
+    <h2 id="construcao-do-server">Construção do Server (Hardware e Software)</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p><strong>Hardware</strong> é a parte física de um sistema de computação, enquanto
+        <strong>Software</strong> é a parte lógica que instrui o hardware. Ambos trabalham juntos para o
+        funcionamento de dispositivos computacionais.
+    </p>
+
+    <hr>
+
+    <h2 id="exemplos-servidores-web">Exemplos de Servidores Web</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><strong>Apache HTTP Server:</strong> Servidor web de código aberto, amplamente utilizado.</li>
+        <li><strong>Nginx:</strong> Servidor web de alto desempenho, conhecido pela baixa utilização de recursos.</li>
+        <li><strong>Microsoft IIS:</strong> Servidor web da Microsoft, usado principalmente em sistemas Windows Server.
+        </li>
+        <li><strong>LiteSpeed:</strong> Focado em velocidade e otimização de recursos.</li>
+        <li><strong>Tomcat:</strong> Servidor web para aplicações Java.</li>
+        <li><strong>Caddy:</strong> Servidor web moderno com suporte integrado para HTTPS.</li>
+    </ul>
+</body>
+
+</html>

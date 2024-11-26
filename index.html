@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1>HTML Básico</h1>
+    <h4>Outros conteúdos</h4>
+<ul>
+    <li><a href="client.html">Modelo Client-Server</a></li>
+    <li><a href="computerHistory.html">História da Computação</a></li>
+</ul>
+    <p>Neste blog você aprenderá como utilizar a linguagem de marcação de HTML5</p>
+    <hr />
+    <h3 id="indice">Índice</h3>
+    <ul>
+        <li><a href="#o-que-e-html">O que é HTML?</a></li>
+        <li><a href="#fundamentos-estrutura-html">Fundamentos da Estrutura HTML</a></li>
+        <li><a href="#principais-elementos-tags">Principais Elementos e Tags</a></li>
+        <li><a href="#listas-html">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#tags-ancora">Tags Âncora (Hyperlinks)</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+    <hr />
+    <h2 id="o-que-e-html">O que é HTML?</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>HTML ou HyperText Markup Language é uma linguagem de marcação que tem como objetivo se tornar o escopo da
+        construção de páginas web, efetuando a estruturação básica do código visual e delimitando os itens a serem
+        estilizados posteriormente por CSS e programados via quaisquer linguagem de programação (Python, Javascript,
+        dentre outras).</p>
+    <hr>
+    <h2 id="fundamentos-estrutura-html">Fundamentos da Estrutura HTML</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p> A estrutura de um documento HTML é composta fundamentalmente por duas partes principais:
+        <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code> Cada uma desempenha papéis distintos na construção de uma
+        página web, oferecendo ao navegador as informações necessárias para renderizar o conteúdo de maneira apropriada.
+    <p>Além disso, é crucial incluir a declaração <code>&lt;
+        !DOCTYPE html&gt;</code> no início de qualquer documento HTML. Essa prática tem raízes históricas, onde as
+        páginas web
+        eram diferenciadas com base no tipo de linguagem utilizada. A inclusão dessa declaração era necessária para
+        garantir a correta interpretação do conteúdo.
+    </p>
+    <p>
+        Ao remover a declaração, você ativará o <strong>Modo Quirks</strong>, que é uma funcionalidade gerada
+        paracompreender páginas antigas que não utilizavam essa declaração. É possível, ao utilizar o inspecionar,
+        visualizar o alerta: <em>Page layout may be unexpected due to Quirks Mode.</em>
+    </p>
+    <p>
+        Páginas mais antigas podem requerer ajustes para se alinharem aos padrões modernos. A utilização do
+        <code>&lt;!DOCTYPE html&gt;</code> permanece como uma prática recomendada para garantir a consistência e a
+        conformidade com os padrões web atuais.
+    </p>
+    <h3>O Cabeçalho (<code>&lt;head&gt;</code>)</h3>
+
+    <p>
+        Seção onde conterá os metadados da sua página web, sendo não diretamente visíveis à página web em si.
+    </p>
+    <ul>
+        <li><code>&lt;title&gt;</code>: Define o título da página, que é exibido na aba do navegador.</li>
+        <li><code>&lt;meta&gt;</code>: Fornece metadados sobre o HTML, como o conjunto de caracteres usado
+            (<code>charset</code>), a descrição da página e palavras-chave para motores de busca.</li>
+        <li><code>&lt;link&gt;</code>: Utilizado para conectar recursos externos como folhas de estilo CSS e ícones de
+            favoritos.</li>
+        <li><code>&lt;style&gt;</code>: Permite incluir CSS diretamente no documento HTML.</li>
+        <li><code>&lt;script&gt;</code>: Referencia ou inclui código JavaScript que pode ser executado pelo navegador.
+        </li>
+    </ul>
+    <h4>Exemplo de head:</h4>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Aqui será inserida uma descrição do site"&gt;
+    &lt;meta name="keywords" content="html,web"&gt;
+    &lt;meta name="author" content="Nome do criador"&gt;
+    &lt;title&gt;Página Web&lt;/title&gt;
+&lt;/head&gt;
+    </pre>
+    <h3>O Corpo (<code>&lt;body&gt;</code>)</h3>
+    <p>
+        A seção <code>&lt;body&gt;</code> é onde o conteúdo visível da página web é colocado.
+        É aqui que textos, imagens, vídeos, jogos e outros elementos interativos são definidos para serem apresentados
+        ao usuário.
+        Cada elemento dentro do <code>&lt;body&gt;</code> pode ser estilizado usando CSS e manipulado com JavaScript.
+    </p>
+    <p>
+        <code>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Título X&lt;/h1&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium eveniet ducimus quis, blanditiis consequatur laboriosam mollitia, quam, dolor hic illo? Deserunt nobis cupiditate aut exercitationem quod deleniti odio modi.&lt;/p&gt;<br>
+            &lt;/body&gt;
+        </code>
+    </p>
+    <hr />
+    <h2 id="principais-elementos-tags">Principais Elementos e Tags</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <h3>Elementos de Cabeçalho: &lt;h1&gt; até &lt;h6&gt;</h3>
+    <p>As tags de cabeçalho são usadas para estruturar títulos e subtítulos em um documento HTML, variando de
+        <strong>&lt;h1&gt;</strong>, o mais importante, até <strong>&lt;h6&gt;</strong>, o menos importante. Elas ajudam
+        na organização hierárquica do conteúdo e influenciam na acessibilidade e SEO.
+    </p>
+
+    <h3>Parágrafos: &lt;p&gt;</h3>
+    <p>A tag <strong>&lt;p&gt;</strong> define parágrafos de texto em um documento. É um dos elementos mais comuns e
+        essenciais para escrever conteúdos textuais estruturados e bem formatados.</p>
+
+    <h3>Citações em Bloco: &lt;blockquote&gt;</h3>
+    <p>O elemento <strong>&lt;blockquote&gt;</strong> é usado para destacar citações longas em um texto, indicando que o
+        conteúdo é uma citação de outra fonte. Ele geralmente é renderizado com uma indentação ou estilo diferenciado
+        pelo navegador.</p>
+
+    <h3>Formatação de Texto: &lt;font&gt; e &lt;del&gt;</h3>
+    <p>A tag <strong>&lt;font&gt;</strong> era utilizada para estilizar fontes, mas foi depreciada no HTML5. Hoje, o
+        estilo das fontes deve ser controlado por CSS. Já a tag <strong>&lt;del&gt;</strong> indica texto que foi
+        excluído ou removido, geralmente sendo exibido com um risco no meio.</p>
+
+    <h3>Abreviações: &lt;abbr&gt;</h3>
+    <p>O elemento <strong>&lt;abbr&gt;</strong> é utilizado para representar abreviações ou siglas, podendo incluir o
+        significado completo em um atributo <code>title</code>. Por exemplo: <abbr
+            title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <hr />
+    <h2 id="listas-html">Listas Ordenadas e Não Ordenadas</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>
+        <code>&lt;ul&gt;</code> serve para listas não ordenadas e <code>&lt;ol&gt;</code> para listas ordenadas, com
+        <code>&lt;li&gt;</code> para cada item da lista.
+    </p>
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>Oi</li>
+        <li>Tchau</li>
+    </ul>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Oi&lt;/li&gt;
+    &lt;li&gt;Tchau&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <ol>
+        <li>Um</li>
+        <li>Dois</li>
+    </ol>
+    <pre>
+&lt;ol&gt;
+    &lt;li&gt;Um&lt;/li&gt;
+    &lt;li&gt;Dois&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    <hr />
+    <h2 id="tags-ancora">Tags Âncora (Hyperlinks)</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>
+        <code>&lt;a&gt;</code> define um hyperlink, podendo ser usado para linkar para outra página, um endereço de
+        email, entre outros.
+    </p>
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>
+            <a href="https://github.com/annielymariah">Meu GitHub</a>
+            <pre>
+&lt;a href="https://github.com/annielymariah"&gt;Meu GitHub&lt;/a&gt;
+            </pre>
+        </li>
+        <li>
+            <a href="https://github.com/annielymariah" target="_blank">Meu GitHub em nova aba</a>
+            <pre>
+&lt;a href="https://github.com/annielymariah" target="_blank"&gt;Meu GitHub em nova aba&lt;/a&gt;
+            </pre>
+        </li>
+        <li>
+            <a href="https://web.dio.me">DIO.me</a>
+            <pre>
+&lt;a href="https://web.dio.me"&gt;DIO.me&lt;/a&gt;
+            </pre>
+        </li>
+    </ul>
+    <hr />
+    <h2 id="referencias">Links de referências</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><a href="http://dio.me">http://dio.me</a></li>
+        <li><a href="http://w3c.org">http://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/">https://developer.mozilla.org/pt-BR/</a></li>
+    </ul>
+</body>
+
+</html>
