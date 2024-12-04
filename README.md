@@ -34,7 +34,7 @@ A ideia é explorar essas tags, entender como elas funcionam e utilizá-las corr
 
 1. Clone este repositório em sua máquina local:
    ```bash
-   git clone https://github.com/annielymariah/htmlEssentialsDIO.git
+   git clone https://github.com/annielymariah/html-essentials-DIO.git
    ```
 
 2. Abra o arquivo `index.html` em seu navegador para visualizar o site desenvolvido.
