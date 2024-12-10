@@ -1,6 +1,6 @@
 <h1 align="center">📔 HTML Essentials DIO ✒️</h1>
 
-Este repositório contém o projeto do desafio de HTML realizado no curso de "HTML Essentials" da Digital Innovation One (DIO). O objetivo deste desafio é desenvolver um website básico utilizando as tags HTML aprendidas durante as aulas práticas, com o intuito de colocar em prática o conhecimento adquirido na estruturação de páginas web.
+Este repositório contém o projeto do desafio de HTML da Digital Innovation One (DIO). O objetivo deste desafio é desenvolver um website básico utilizando as tags HTML aprendidas durante as aulas práticas, com o intuito de colocar em prática o conhecimento adquirido na estruturação de páginas web.
 
 ## Objetivo do Desafio
 
