@@ -43,4 +43,4 @@ git clone https://github.com/annielymariah/html-essentials-DIO.git
 
 All source code developed during the course was versioned on GitHub, and you can access the repository for the challenge proposed by Digital Innovation One through the following link:
 
-[Digital Innovation One Repository - HTML Track Module 1](https://github.com/digitalinnovationone/html-track-module-1)
+[Digital Innovation One Repository - HTML Track Module 1](https://github.com/digitalinnovationone/trilha-html-modulo-1)
