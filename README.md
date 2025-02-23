@@ -1,46 +1,46 @@
 <h1 align="center">📔 HTML Essentials DIO ✒️</h1>
 
-Este repositório contém o projeto do desafio de HTML da Digital Innovation One (DIO). O objetivo deste desafio é desenvolver um website básico utilizando as tags HTML aprendidas durante as aulas práticas, com o intuito de colocar em prática o conhecimento adquirido na estruturação de páginas web.
+This repository contains the Digital Innovation One (DIO) HTML challenge project. The goal of this challenge is to develop a basic website using the HTML tags learned during the practical classes, with the aim of putting into practice the knowledge acquired in structuring web pages.
 
-## Objetivo do Desafio
+## Challenge Objective
 
-O objetivo deste desafio é construir um website simples que utilize as tags HTML explicadas durante as aulas. O projeto busca reforçar o entendimento sobre a utilização de elementos básicos e novos elementos sugeridos, através da criação de conteúdo textual e estruturação da página. O desenvolvimento desse desafio envolve as seguintes etapas:
+The goal of this challenge is to build a simple website that uses the HTML tags explained during the classes. The project seeks to reinforce the understanding of the use of basic elements and new suggested elements, through the creation of textual content and page structuring. The development of this challenge involves the following steps:
 
-- Utilizar algumas das tags aprendidas nas aulas:
-  - `<h1> até <h6>`
-  - `<p>`
-  - `<mark>`
-  - `<small>`
-  - `<i>`
-  - `<u>`
-  - `<strong>`
-  - `<ol>`
-  - `<ul>`
-  - `<li>`
-  - `<a>`
-  - `<hr>`
-  - `<sub>`
-  - `<sup>`
-  - `<blockquote>`
+- Use some of the tags learned in the classes:
+- `<h1> to <h6>`
+- `<p>`
+- `<mark>`
+- `<small>`
+- `<i>`
+- `<u>`
+- `<strong>`
+- `<ol>`
+- `<ul>`
+- `<li>`
+- `<a>`
+- `<hr>`
+- `<sub>`
+- `<sup>`
+- `<blockquote>`
 
-- Utilizar novas tags sugeridas:
-  - `<font>`
-  - `<del>`
-  - `<abbr>`
+- Use new suggested tags:
+- `<font>`
+- `<del>`
+- `<abbr>`
 
-A ideia é explorar essas tags, entender como elas funcionam e utilizá-las corretamente para construir um conteúdo rico e acessível.
+The idea is to explore these tags, understand how they work and use them correctly to build rich and accessible content.
 
-## Como usar
+## How to use
 
-1. Clone este repositório em sua máquina local:
-   ```bash
-   git clone https://github.com/annielymariah/html-essentials-DIO.git
-   ```
+1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/annielymariah/html-essentials-DIO.git
+```
 
-2. Abra o arquivo `index.html` em seu navegador para visualizar o site desenvolvido.
+2. Open the `index.html` file in your browser to view the developed website.
 
 ## GitHub
 
-Todo código-fonte desenvolvido durante o curso foi versionado no GitHub, e você pode acessar o repositório do desafio proposto pela Digital Innovation One através do seguinte link:
+All source code developed during the course was versioned on GitHub, and you can access the repository for the challenge proposed by Digital Innovation One through the following link:
 
-[Repositório Digital Innovation One - Trilha HTML Módulo 1](https://github.com/digitalinnovationone/trilha-html-modulo-1)
+[Digital Innovation One Repository - HTML Track Module 1](https://github.com/digitalinnovationone/html-track-module-1)
